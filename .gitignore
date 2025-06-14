@@ -1,0 +1,80 @@
+.env
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.log
+*.sqlite3
+
+# Virtual environment
+.env
+.venv/
+venv/
+env/
+ENV/
+*.env
+*.env.*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# pycache and compiled stuff
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# MyPy, Pytest, coverage
+.mypy_cache/
+.pytest_cache/
+coverage.*
+.cache
+nosetests.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Streamlit specific
+.streamlit/config.toml
+
+# FAISS or local vector DB cache (if saved)
+data/
+*.faiss
+
+# Model or embedding files (if generated)
+*.pt
+*.bin
+*.pkl
+*.ckpt
+
+# HuggingFace cache
+~/.cache/huggingface/
+
+# Language model artifacts (if large)
+*.onnx
+*.tflite
+
+# Test and temp files
+*.tmp
+*.bak
+*.swp
+*.old
+*.orig
+
+# Node/npm if you ever use frontend packages
+node_modules/
+
+# Production artifacts
+dist/
+build/
+*.egg-info/
