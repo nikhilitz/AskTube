@@ -1,6 +1,5 @@
-.env
 # ========================
-# Python
+# 💻 Python
 # ========================
 __pycache__/
 *.py[cod]
@@ -10,7 +9,7 @@ __pycache__/
 *.log
 *.sqlite3
 
-# Virtual environment
+# 🧪 Virtual Environments
 .env
 .venv/
 venv/
@@ -19,16 +18,10 @@ ENV/
 *.env
 *.env.*
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
+# 📒 Jupyter Notebooks
+.ipynb_checkpoints/
 
-# pycache and compiled stuff
-*.pyc
-*.pyo
-*.pyd
-__pycache__/
-
-# MyPy, Pytest, coverage
+# 🧪 MyPy, Pytest, Coverage
 .mypy_cache/
 .pytest_cache/
 coverage.*
@@ -38,43 +31,45 @@ nosetests.xml
 *.py,cover
 .hypothesis/
 
-# VSCode
-.vscode/
-
-# macOS
-.DS_Store
-
-# Streamlit specific
-.streamlit/config.toml
-
-# FAISS or local vector DB cache (if saved)
-data/
-*.faiss
-
-# Model or embedding files (if generated)
+# 🧠 Model Artifacts
 *.pt
 *.bin
 *.pkl
 *.ckpt
+*.tflite
+*.onnx
 
-# HuggingFace cache
+# 🧬 HuggingFace Cache
+.cache/
 ~/.cache/huggingface/
 
-# Language model artifacts (if large)
-*.onnx
-*.tflite
+# 🧠 Vector Store Artifacts (e.g., FAISS)
+data/
+*.faiss
+*.index
 
-# Test and temp files
+# 🧾 Temp/Test/Backup Files
 *.tmp
 *.bak
 *.swp
 *.old
 *.orig
 
-# Node/npm if you ever use frontend packages
-node_modules/
+# 🧑‍💻 IDEs & Editors
+.vscode/
+.idea/
 
-# Production artifacts
+# 🍏 macOS
+.DS_Store
+
+# 🌐 Node/NPM (for optional frontend builds)
+node_modules/
+package-lock.json
+
+# 📦 Packaging
 dist/
 build/
 *.egg-info/
+
+# 📊 Streamlit
+.streamlit/config.toml
